@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Robert Palmer | Software Engineering Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A curated portfolio of software engineering projects by Robert Palmer, grouped by programming language." />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Robert Palmer | Software Engineering Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A curated portfolio of software engineering projects by Robert Palmer, grouped by programming language."
+    />
 
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>GitHub Projects</h1>
+    <div id="repos">Loading projects…</div>
 
-  <h1>GitHub Projects</h1>
-  <div id="repos">Loading projects…</div>
+    <script>
+      const username = "RJPalmer";
+      const container = document.getElementById("repos");
 
-  <script>
-    const username = "RJPalmer";
-    const container = document.getElementById("repos");
+      fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
+        .then((res) => res.json())
+        .then((repos) => {
+          const grouped = {};
 
-    fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
-      .then(res => res.json())
-      .then(repos => {
-        const grouped = {};
+          repos.forEach((repo) => {
+            const lang = repo.language || "Other";
+            if (!grouped[lang]) grouped[lang] = [];
+            grouped[lang].push(repo);
+          });
 
-        repos.forEach(repo => {
-          const lang = repo.language || "Other";
-          if (!grouped[lang]) grouped[lang] = [];
-          grouped[lang].push(repo);
-        });
+          const languages = Object.keys(grouped).sort();
 
-        const languages = Object.keys(grouped).sort();
+          container.innerHTML = "";
 
-        container.innerHTML = "";
+          languages.forEach((lang) => {
+            const section = document.createElement("section");
+            section.className = "language";
 
-        languages.forEach(lang => {
-          const section = document.createElement("section");
-          section.className = "language";
+            section.innerHTML = `<h2>${lang}</h2>`;
 
-          section.innerHTML = `<h2>${lang}</h2>`;
-
-          grouped[lang]
-            .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-            .forEach(repo => {
-              const div = document.createElement("div");
-              div.className = "repo";
-              if(repo != null){
-              div.innerHTML = `
+            grouped[lang]
+              .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+              .forEach((repo) => {
+                const div = document.createElement("div");
+                div.className = "repo";
+                if (repo != null) {
+                  div.innerHTML = `
                 <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                 ${repo.description ? `<p>${repo.description}</p>` : ""}
                 <div class="meta">
-                  ★ ${repo.stargazers_count} • Updated ${new Date(repo.updated_at).toLocaleDateString()}
+                  ★ ${repo.stargazers_count} • Updated ${new Date(
+                    repo.updated_at
+                  ).toLocaleDateString()}
                 </div>`;
-              }
-              section.appendChild(div);
-            });
+                }
+                section.appendChild(div);
+              });
 
-          container.appendChild(section);
+            container.appendChild(section);
+          });
+        })
+        .catch(() => {
+          container.innerHTML = "Unable to load repositories.";
         });
-      })
-      .catch(() => {
-        container.innerHTML = "Unable to load repositories.";
+    </script>
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        toggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+      }
+
+      toggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        toggle.textContent = next === "dark" ? "☀️" : "🌙";
       });
-  </script>
-<script>
-  const toggle = document.getElementById("theme-toggle");
-  const savedTheme = localStorage.getItem("theme");
-
-  if (savedTheme) {
-    document.documentElement.setAttribute("data-theme", savedTheme);
-    toggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-  }
-
-  toggle.addEventListener("click", () => {
-    const current = document.documentElement.getAttribute("data-theme");
-    const next = current === "dark" ? "light" : "dark";
-
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
-    toggle.textContent = next === "dark" ? "☀️" : "🌙";
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>

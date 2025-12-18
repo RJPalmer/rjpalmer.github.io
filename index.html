@@ -16,6 +16,10 @@
       <header>
         <h1>GitHub Projects</h1>
       </header>
+      <div class="accordion-controls">
+        <button id="expand-all">Expand all</button>
+        <button id="collapse-all">Collapse all</button>
+      </div>
       <div id="repos">Loading projects…</div>
     </div>
 
@@ -23,6 +27,7 @@
     <script>
       const username = "RJPalmer";
       const container = document.getElementById("repos");
+      let accordionHeaders = [];
 
       fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
         .then((res) => res.json())
@@ -60,6 +65,7 @@
 
             section.appendChild(header);
             section.appendChild(content);
+            accordionHeaders.push({ header, content });
 
             grouped[lang]
               .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
@@ -80,6 +86,22 @@
               });
 
             container.appendChild(section);
+          });
+
+          document.getElementById("expand-all").addEventListener("click", () => {
+            accordionHeaders.forEach(({ header, content }) => {
+              header.setAttribute("aria-expanded", "true");
+              content.style.display = "block";
+              header.querySelector(".chevron").textContent = "▾";
+            });
+          });
+
+          document.getElementById("collapse-all").addEventListener("click", () => {
+            accordionHeaders.forEach(({ header, content }) => {
+              header.setAttribute("aria-expanded", "false");
+              content.style.display = "none";
+              header.querySelector(".chevron").textContent = "▸";
+            });
           });
         })
         .catch(() => {

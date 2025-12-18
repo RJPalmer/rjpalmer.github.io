@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>GitHub Projects</h1>
-    <div id="repos">Loading projects…</div>
+    <div class="container">
+      <header>
+        <h1>GitHub Projects</h1>
+      </header>
+      <div id="repos">Loading projects…</div>
+    </div>
 
     <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     <script>
@@ -39,7 +43,23 @@
             const section = document.createElement("section");
             section.className = "language";
 
-            section.innerHTML = `<h2>${lang}</h2>`;
+            const header = document.createElement("button");
+            header.className = "accordion-header";
+            header.setAttribute("aria-expanded", "false");
+            header.innerHTML = `<span>${lang}</span><span class="chevron">▸</span>`;
+
+            const content = document.createElement("div");
+            content.className = "accordion-content";
+
+            header.addEventListener("click", () => {
+              const expanded = header.getAttribute("aria-expanded") === "true";
+              header.setAttribute("aria-expanded", String(!expanded));
+              content.style.display = expanded ? "none" : "block";
+              header.querySelector(".chevron").textContent = expanded ? "▸" : "▾";
+            });
+
+            section.appendChild(header);
+            section.appendChild(content);
 
             grouped[lang]
               .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
@@ -56,7 +76,7 @@
                   ).toLocaleDateString()}
                 </div>`;
                 }
-                section.appendChild(div);
+                content.appendChild(div);
               });
 
             container.appendChild(section);

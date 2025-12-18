@@ -28,6 +28,8 @@
       const username = "RJPalmer";
       const container = document.getElementById("repos");
       let accordionHeaders = [];
+      const expandAllBtn = document.getElementById("expand-all");
+      const collapseAllBtn = document.getElementById("collapse-all");
 
       fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
         .then((res) => res.json())
@@ -51,7 +53,7 @@
             const header = document.createElement("button");
             header.className = "accordion-header";
             header.setAttribute("aria-expanded", "false");
-            header.innerHTML = `<span>${lang}</span><span class="chevron">▸</span>`;
+            header.innerHTML = `<span>${lang} (${grouped[lang].length})</span><span class="chevron">▸</span>`;
 
             const content = document.createElement("div");
             content.className = "accordion-content";
@@ -61,6 +63,7 @@
               header.setAttribute("aria-expanded", String(!expanded));
               content.style.display = expanded ? "none" : "block";
               header.querySelector(".chevron").textContent = expanded ? "▸" : "▾";
+              updateAccordionControls();
             });
 
             section.appendChild(header);
@@ -88,12 +91,25 @@
             container.appendChild(section);
           });
 
+          function updateAccordionControls() {
+            const allExpanded = accordionHeaders.every(
+              ({ header }) => header.getAttribute("aria-expanded") === "true"
+            );
+            const allCollapsed = accordionHeaders.every(
+              ({ header }) => header.getAttribute("aria-expanded") === "false"
+            );
+
+            expandAllBtn.disabled = allExpanded;
+            collapseAllBtn.disabled = allCollapsed;
+          }
+
           document.getElementById("expand-all").addEventListener("click", () => {
             accordionHeaders.forEach(({ header, content }) => {
               header.setAttribute("aria-expanded", "true");
               content.style.display = "block";
               header.querySelector(".chevron").textContent = "▾";
             });
+            updateAccordionControls();
           });
 
           document.getElementById("collapse-all").addEventListener("click", () => {
@@ -102,7 +118,10 @@
               content.style.display = "none";
               header.querySelector(".chevron").textContent = "▸";
             });
+            updateAccordionControls();
           });
+
+          updateAccordionControls();
         })
         .catch(() => {
           container.innerHTML = "Unable to load repositories.";

@@ -1,38 +1,68 @@
+:root {
+    /* Backgrounds */
+    --bg-primary: #f6c1a4;        /* Main page background */
+    --bg-card: #fde3cf;           /* Card/container background */
+    --bg-button-primary: #d95526; /* Primary button background */
+    --bg-button-secondary: #fff1e6; /* Secondary button background */
+    --bg-alert-info: #fff1e6;
+    --bg-alert-warning: #fde3cf;
+
+    /* Text Colors */
+    --text-primary: #4a2f1b;      /* Headings, main text */
+    --text-secondary: #7c5034;    /* Subtext, captions */
+    --text-button-primary: #ffffff;
+    --text-button-secondary: #4a2f1b;
+    --text-link: #d95526;
+    --text-link-hover: #c1471b;
+    --text-alert-warning: #c1471b;
+
+    /* Borders / Dividers */
+    --border-default: #e3a986;    /* Cards, dividers, forms */
+    --border-focus: #d95526;      /* Input focus, active state */
+
+    /* Buttons */
+    --button-hover-primary: #c1471b;
+    --button-hover-secondary: #f0b691;
+
+    /* Shadows */
+    --shadow-card-hover: rgba(0, 0, 0, 0.1);
+}
+
 /* General Body */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg-primary);
+  color: var(--text-primary);
   padding: 2.5rem 1.25rem;
   line-height: 1.6;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
+  color: var(--text-primary);
   margin-top: 0;
 }
 
 p {
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 1em;
 }
 
 p.subtext {
-  color: var(--muted);
+  color: var(--text-secondary);
   font-size: 0.9em;
 }
 
 /* Links */
 a {
-  color: var(--accent);
+  color: var(--text-link);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--text-link-hover);
   text-decoration: underline;
 }
 
@@ -41,17 +71,17 @@ button, .btn {
   font-family: inherit;
   padding: 0.6em 1.2em;
   border-radius: 5px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-default);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background: var(--card);
-  color: var(--text);
+  background: var(--bg-card);
+  color: var(--text-primary);
 }
 
 button.primary, .btn.primary {
-  background: var(--accent);
-  color: var(--card);
-  border-color: var(--accent);
+  background: var(--bg-button-primary);
+  color: var(--bg-card);
+  border-color: var(--bg-button-primary);
 }
 
 button.primary:hover, .btn.primary:hover {
@@ -59,9 +89,9 @@ button.primary:hover, .btn.primary:hover {
 }
 
 button.secondary, .btn.secondary {
-  background: var(--card);
-  color: var(--text);
-  border-color: var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-default);
 }
 
 button.secondary:hover, .btn.secondary:hover {
@@ -70,8 +100,8 @@ button.secondary:hover, .btn.secondary:hover {
 
 /* Cards / Containers */
 .card, .repo {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.25rem;
@@ -85,7 +115,7 @@ button.secondary:hover, .btn.secondary:hover {
 /* Section Titles */
 section h2 {
   font-size: 1.6rem;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--border-default);
   padding-bottom: 0.5rem;
   margin-bottom: 1.75rem;
 }
@@ -94,22 +124,22 @@ section h2 {
 .meta {
   margin-top: 0.6rem;
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--text-secondary);
 }
 
 /* Forms */
 input, textarea, select {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-default);
   border-radius: 5px;
   padding: 0.5em;
   font-family: inherit;
   font-size: 1em;
-  color: var(--text);
-  background: var(--card);
+  color: var(--text-primary);
+  background: var(--bg-card);
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: var(--accent);
+  border-color: var(--bg-button-primary);
   outline: none;
 }
 
@@ -121,22 +151,22 @@ input:focus, textarea:focus, select:focus {
 }
 
 .alert.info {
-  background: var(--card);
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
 }
 
 .alert.warning {
-  background: var(--card);
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  background: var(--bg-card);
+  border: 1px solid var(--bg-button-primary);
+  color: var(--bg-button-primary);
 }
 
 /* Utility Classes */
-.text-primary { color: var(--text) !important; }
-.text-secondary { color: var(--muted) !important; }
-.bg-primary { background: var(--accent) !important; color: var(--card) !important; }
-.bg-secondary { background: var(--card) !important; color: var(--text) !important; }
+.text-primary { color: var(--text-primary) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.bg-primary { background: var(--bg-button-primary) !important; color: var(--bg-card) !important; }
+.bg-secondary { background: var(--bg-card) !important; color: var(--text-primary) !important; }
 
 /* Theme Toggle Button */
 #theme-toggle {
@@ -144,9 +174,9 @@ input:focus, textarea:focus, select:focus {
   top: 1rem !important;
   right: 1rem !important;
   z-index: 9999;
-  background: var(--card);
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
   padding: 0.5rem 0.6rem;
   border-radius: 999px;
   cursor: pointer;

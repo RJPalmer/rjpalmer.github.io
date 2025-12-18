@@ -43,14 +43,14 @@
             .forEach(repo => {
               const div = document.createElement("div");
               div.className = "repo";
-
+              if(repo != null){
               div.innerHTML = `
                 <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                 ${repo.description ? `<p>${repo.description}</p>` : ""}
                 <div class="meta">
                   ★ ${repo.stargazers_count} • Updated ${new Date(repo.updated_at).toLocaleDateString()}
                 </div>`;
-
+              }
               section.appendChild(div);
             });
 

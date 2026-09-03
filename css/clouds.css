@@ -1,0 +1,46 @@
+      /* container */
+      #clouds {
+        position: fixed;
+        inset: 0 0 auto 0; /* top only */
+        height: 140px;
+        pointer-events: none;
+        z-index: 1000;
+        overflow: hidden;
+      }
+      
+      .cloud {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 140px;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        will-change: transform;
+        transform: translateX(0);
+        animation: cloud-scroll 60s linear infinite;
+        opacity: 0.9;
+      }
+      
+      .cloud--layer1 {
+        background-image: url('/assets/clouds-layer1.svg');
+        animation-duration: 60s; /* slower, further back */
+        opacity: 0.6;
+      }
+      
+      .cloud--layer2 {
+        background-image: url('/assets/clouds-layer2.svg');
+        animation-duration: 30s; /* faster, in front */
+        opacity: 0.9;
+      }
+      
+      @keyframes cloud-scroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+      }
+      
+      /* Respect reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .cloud { animation: none; }
+      }
+  

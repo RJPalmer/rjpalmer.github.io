@@ -27,6 +27,36 @@
   /* Shadows */ 
   --shadow-card-hover: rgba(74, 47, 27, 0.15); 
 } 
+/* Dark Theme Variables */
+body.dark-theme {
+  /* Backgrounds */ 
+  --bg-primary: #0f172a;           /* Deep slate/navy page background */ 
+  --bg-card: #1e293b;              /* Slightly lighter container fill */ 
+  --bg-button-primary: #ea580c;     /* Vibrant dark-mode orange accent */ 
+  --bg-button-secondary: #334155;   /* Neutral dark button fill */ 
+  --bg-alert-info: #334155; 
+  --bg-alert-warning: #1e293b; 
+  
+  /* Text Colors */ 
+  --text-primary: #f8fafc;          /* High-contrast off-white for headings */ 
+  --text-secondary: #94a3b8;        /* Soft gray for subtext and timestamps */ 
+  --text-button-primary: #ffffff; 
+  --text-button-secondary: #f8fafc; 
+  --text-link: #f97316;             /* Slightly brighter link color for dark backgrounds */ 
+  --text-link-hover: #ffedd5; 
+  --text-alert-warning: #f97316; 
+  
+  /* Borders / Dividers */ 
+  --border-default: #334155;        /* Subtle border separating dark elements */ 
+  --border-focus: #ea580c;          /* Active accent boundary highlight */ 
+  
+  /* Hover Overrides */ 
+  --button-hover-primary: #c2410c; 
+  --button-hover-secondary: #475569; 
+  
+  /* Shadows */ 
+  --shadow-card-hover: rgba(0, 0, 0, 0.4); /* Deeper drop shadow for dark mode depth */ 
+}
 
 /* General Body Styling */ 
 body { 

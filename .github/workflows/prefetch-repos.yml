@@ -4,7 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 3 * * *" # daily, UTC
-
+  push:
+      branches:
+        - main
+        - 1-add-github-action-to-prefetch-repos-into-static-json-and-update-site-to-use-it
 permissions:
   contents: write
 
@@ -15,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{github.ref_name}}
 
       - name: Fetch public repositories
         env:

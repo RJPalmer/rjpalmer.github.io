@@ -500,8 +500,8 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-09-03T16:49:56Z",
-    "language": "HTML"
+    "updated_at": "2026-09-03T16:56:15Z",
+    "language": "CSS"
   },
   {
     "name": "scrapy",

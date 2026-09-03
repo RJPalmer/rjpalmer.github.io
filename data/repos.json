@@ -1,0 +1,642 @@
+[
+  {
+    "name": "2D-Platformer",
+    "html_url": "https://github.com/RJPalmer/2D-Platformer",
+    "description": "Testing 2D Sprite Frameworks",
+    "stargazers_count": 0,
+    "updated_at": "2017-11-16T16:49:37Z",
+    "language": "ASP"
+  },
+  {
+    "name": "2dTesting",
+    "html_url": "https://github.com/RJPalmer/2dTesting",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2017-11-16T05:08:12Z",
+    "language": "C#"
+  },
+  {
+    "name": "AnimatedImages",
+    "html_url": "https://github.com/RJPalmer/AnimatedImages",
+    "description": "Simple Animation using Javascript, jQuery, and the HTML5 canvas tag",
+    "stargazers_count": 1,
+    "updated_at": "2013-11-07T03:40:46Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "AssetsUp",
+    "html_url": "https://github.com/RJPalmer/AssetsUp",
+    "description": "AssetsUp is a modern inventory and asset management system designed to help businesses track, register, monitor, and manage physical and digital assets across departments, branches, and even countries.",
+    "stargazers_count": 0,
+    "updated_at": "2026-01-29T03:54:58Z",
+    "language": null
+  },
+  {
+    "name": "azure-sql-db-fullstack-serverless-kickstart",
+    "html_url": "https://github.com/RJPalmer/azure-sql-db-fullstack-serverless-kickstart",
+    "description": "Fullstack/Jamstack solution with Vue.js, Azure Functions, Azure Static Web apps and Azure SQL. ",
+    "stargazers_count": 0,
+    "updated_at": "2022-01-13T03:11:44Z",
+    "language": "PLpgSQL"
+  },
+  {
+    "name": "BioDrop",
+    "html_url": "https://github.com/RJPalmer/BioDrop",
+    "description": "Connect to your audience with a single link. Showcase the content you create and your projects in one place. Make it easier for people to find, follow and subscribe.",
+    "stargazers_count": 1,
+    "updated_at": "2025-09-25T14:56:31Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Blogwebsite",
+    "html_url": "https://github.com/RJPalmer/Blogwebsite",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2023-10-30T21:55:21Z",
+    "language": null
+  },
+  {
+    "name": "chesskit-swift",
+    "html_url": "https://github.com/RJPalmer/chesskit-swift",
+    "description": "♟️ Swift package for implementing chess logic.",
+    "stargazers_count": 0,
+    "updated_at": "2024-04-14T19:54:09Z",
+    "language": null
+  },
+  {
+    "name": "Color-Apps-In-Csharp-WinForms",
+    "html_url": "https://github.com/RJPalmer/Color-Apps-In-Csharp-WinForms",
+    "description": "A suite of professional color utility apps for C# WinForms, featuring a dynamic Color Picker and a Palette Generator with full conversion support (RGB, HEX, CMYK, HSV, HSL).",
+    "stargazers_count": 0,
+    "updated_at": "2026-01-23T18:07:53Z",
+    "language": null
+  },
+  {
+    "name": "Container-Compose",
+    "html_url": "https://github.com/RJPalmer/Container-Compose",
+    "description": "A docker-compose clone for Apple Container",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-04T19:23:47Z",
+    "language": null
+  },
+  {
+    "name": "Coursera_AdvSwift_Week4",
+    "html_url": "https://github.com/RJPalmer/Coursera_AdvSwift_Week4",
+    "description": "Final Project for Coursera course on Advanced Swift",
+    "stargazers_count": 0,
+    "updated_at": "2023-03-02T14:56:55Z",
+    "language": "Swift"
+  },
+  {
+    "name": "Coursera_BlazorFinalProject",
+    "html_url": "https://github.com/RJPalmer/Coursera_BlazorFinalProject",
+    "description": "Implementation of the final project activity in Coursera's \"Blazor for Front-End Development\" course",
+    "stargazers_count": 0,
+    "updated_at": "2025-05-22T00:12:25Z",
+    "language": "CSS"
+  },
+  {
+    "name": "desert-racer.github.io",
+    "html_url": "https://github.com/RJPalmer/desert-racer.github.io",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2025-10-03T04:45:16Z",
+    "language": null
+  },
+  {
+    "name": "Developer_Quiz_Site",
+    "html_url": "https://github.com/RJPalmer/Developer_Quiz_Site",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2024-11-13T17:28:06Z",
+    "language": "TypeScript"
+  },
+  {
+    "name": "DocsGPT",
+    "html_url": "https://github.com/RJPalmer/DocsGPT",
+    "description": "GPT-powered chat for documentation, chat with your documents",
+    "stargazers_count": 0,
+    "updated_at": "2023-10-17T14:48:59Z",
+    "language": null
+  },
+  {
+    "name": "DragCardContainer",
+    "html_url": "https://github.com/RJPalmer/DragCardContainer",
+    "description": "A multi-directional card swiping library inspired by Tinder and TanTan",
+    "stargazers_count": 0,
+    "updated_at": "2023-11-13T21:39:09Z",
+    "language": null
+  },
+  {
+    "name": "DrinkAPI",
+    "html_url": "https://github.com/RJPalmer/DrinkAPI",
+    "description": "A REST Client made in Swift for viewing various drink cocktails available from the Drink API",
+    "stargazers_count": 0,
+    "updated_at": "2024-04-23T02:48:14Z",
+    "language": "Swift"
+  },
+  {
+    "name": "FeF-WhackAMole",
+    "html_url": "https://github.com/RJPalmer/FeF-WhackAMole",
+    "description": "Whack-a-Mole is an interactive web-based game where players aim to quickly \"whack\" moles that randomly pop up from a grid of holes. Players earn points for each successful click on a mole, testing their speed and accuracy.",
+    "stargazers_count": 0,
+    "updated_at": "2024-10-08T14:25:18Z",
+    "language": null
+  },
+  {
+    "name": "Files",
+    "html_url": "https://github.com/RJPalmer/Files",
+    "description": "A modern file manager that helps users organize their files and folders.",
+    "stargazers_count": 0,
+    "updated_at": "2026-05-17T23:07:14Z",
+    "language": null
+  },
+  {
+    "name": "free-programming-books",
+    "html_url": "https://github.com/RJPalmer/free-programming-books",
+    "description": ":books: Freely available programming books",
+    "stargazers_count": 0,
+    "updated_at": "2023-10-17T21:21:11Z",
+    "language": null
+  },
+  {
+    "name": "FullStackApp",
+    "html_url": "https://github.com/RJPalmer/FullStackApp",
+    "description": "A sample full-stack web application built with Blazor (front-end) and ASP.NET Core Minimal API (back-end). The application demonstrates API integration, JSON serialization, error handling, caching strategies, and CORS configuration.",
+    "stargazers_count": 0,
+    "updated_at": "2026-09-03T15:08:20Z",
+    "language": "HTML"
+  },
+  {
+    "name": "Function-Input",
+    "html_url": "https://github.com/RJPalmer/Function-Input",
+    "description": "A beginning piece to a graphing calculator project. Sets up the overall GUI and allows the end user to type in a function have it displayed in the results area.",
+    "stargazers_count": 1,
+    "updated_at": "2013-07-23T19:45:24Z",
+    "language": "Java"
+  },
+  {
+    "name": "game-off-2016",
+    "html_url": "https://github.com/RJPalmer/game-off-2016",
+    "description": "GitHub's month-long game jam :video_game: November 2016",
+    "stargazers_count": 0,
+    "updated_at": "2016-11-01T21:13:28Z",
+    "language": null
+  },
+  {
+    "name": "GameBoard",
+    "html_url": "https://github.com/RJPalmer/GameBoard",
+    "description": "Using java graphics to develop a game board and move piece around on the board. An element of a checkers project in development",
+    "stargazers_count": 1,
+    "updated_at": "2014-05-03T03:27:18Z",
+    "language": "Java"
+  },
+  {
+    "name": "GDevelop",
+    "html_url": "https://github.com/RJPalmer/GDevelop",
+    "description": "🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-05T22:03:57Z",
+    "language": null
+  },
+  {
+    "name": "git-gang",
+    "html_url": "https://github.com/RJPalmer/git-gang",
+    "description": "Join the world's biggest open-source contributors list. Add your name in 15 seconds.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-29T23:22:16Z",
+    "language": null
+  },
+  {
+    "name": "GitHubPagesTest",
+    "html_url": "https://github.com/RJPalmer/GitHubPagesTest",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2016-12-14T23:33:46Z",
+    "language": null
+  },
+  {
+    "name": "Glide",
+    "html_url": "https://github.com/RJPalmer/Glide",
+    "description": "Game engine for making 2d games on iOS, macOS and tvOS, with practical examples and tutorials",
+    "stargazers_count": 0,
+    "updated_at": "2026-05-19T00:09:30Z",
+    "language": null
+  },
+  {
+    "name": "GNews",
+    "html_url": "https://github.com/RJPalmer/GNews",
+    "description": "A Happy and lightweight Python Package that Provides an API to search for articles on Google News and returns a JSON response.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-29T23:30:00Z",
+    "language": null
+  },
+  {
+    "name": "hacktoberfest",
+    "html_url": "https://github.com/RJPalmer/hacktoberfest",
+    "description": "Make your first Pull Request on Hacktoberfest 2023. Don't forget to spread love and if you like give us a ⭐️",
+    "stargazers_count": 1,
+    "updated_at": "2026-08-26T17:58:11Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "hacktoberfest_sbmxc",
+    "html_url": "https://github.com/RJPalmer/hacktoberfest_sbmxc",
+    "description": "Create your first PR! Don't forget to star if it helped!",
+    "stargazers_count": 0,
+    "updated_at": "2023-10-25T16:46:22Z",
+    "language": "Python"
+  },
+  {
+    "name": "hacktoberfest-practice",
+    "html_url": "https://github.com/RJPalmer/hacktoberfest-practice",
+    "description": "Repo for you to raise a Pull Request for practice",
+    "stargazers_count": 0,
+    "updated_at": "2024-11-13T17:14:56Z",
+    "language": null
+  },
+  {
+    "name": "Hacktoberfest2023",
+    "html_url": "https://github.com/RJPalmer/Hacktoberfest2023",
+    "description": "Make your first Pull Request on Hacktoberfest 2023. Don't forget to spread love and if you like give us a ⭐️ ",
+    "stargazers_count": 1,
+    "updated_at": "2023-10-07T22:22:57Z",
+    "language": "Python"
+  },
+  {
+    "name": "Hello-World",
+    "html_url": "https://github.com/RJPalmer/Hello-World",
+    "description": "My First Project On Github",
+    "stargazers_count": 1,
+    "updated_at": "2014-04-15T20:42:17Z",
+    "language": null
+  },
+  {
+    "name": "HTML5RotatingSquares",
+    "html_url": "https://github.com/RJPalmer/HTML5RotatingSquares",
+    "description": "Using the HTML5 canvas and javascript, squares switch color allowing them to rotate",
+    "stargazers_count": 1,
+    "updated_at": "2024-11-21T15:21:35Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "intro-react",
+    "html_url": "https://github.com/RJPalmer/intro-react",
+    "description": "A robot powered training repository :robot:",
+    "stargazers_count": 0,
+    "updated_at": "2022-01-06T03:38:17Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Introduction-to-Web-Development",
+    "html_url": "https://github.com/RJPalmer/Introduction-to-Web-Development",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2025-04-19T23:21:31Z",
+    "language": "CSS"
+  },
+  {
+    "name": "ios-war-card-game",
+    "html_url": "https://github.com/RJPalmer/ios-war-card-game",
+    "description": "Classic War card game rebuilt for iOS in Swift, showcasing clean architecture, testable game logic, and modern UIKit development practices.",
+    "stargazers_count": 0,
+    "updated_at": "2026-04-06T20:29:08Z",
+    "language": "Swift"
+  },
+  {
+    "name": "JavaCheckers",
+    "html_url": "https://github.com/RJPalmer/JavaCheckers",
+    "description": "This is a classic implementation of the Checkers game written in Java. The game supports two-player mode, where players can compete against each other on the same computer. The game follows standard Checkers rules and provides a graphical user interface (GUI) for an enhanced gaming experience.",
+    "stargazers_count": 1,
+    "updated_at": "2026-09-03T15:04:31Z",
+    "language": "Java"
+  },
+  {
+    "name": "JoltPhysics.js",
+    "html_url": "https://github.com/RJPalmer/JoltPhysics.js",
+    "description": "Port of JoltPhysics to JavaScript using emscripten",
+    "stargazers_count": 0,
+    "updated_at": "2026-01-08T17:52:46Z",
+    "language": null
+  },
+  {
+    "name": "learn-javascript",
+    "html_url": "https://github.com/RJPalmer/learn-javascript",
+    "description": "A book that teaches JavaScript 📗💻📖",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-06T20:07:27Z",
+    "language": "HTML"
+  },
+  {
+    "name": "LearnUnityBook",
+    "html_url": "https://github.com/RJPalmer/LearnUnityBook",
+    "description": "The example project taken from chapter 1 of the book \"A Beginner's Guide to 2D Platform Games with Unity: Create a Simple 2D Platform Game and Learn to Code in the Process\"",
+    "stargazers_count": 1,
+    "updated_at": "2024-05-14T19:21:08Z",
+    "language": "C#"
+  },
+  {
+    "name": "LinksHub",
+    "html_url": "https://github.com/RJPalmer/LinksHub",
+    "description": "LinksHub aims to provide developers with access to a wide range of free resources and tools that they can use in their work. These resources include links to free software, libraries, frameworks, and other tools that can be used to build and deploy applications and websites.",
+    "stargazers_count": 1,
+    "updated_at": "2025-09-25T14:56:39Z",
+    "language": "TypeScript"
+  },
+  {
+    "name": "littlelemon",
+    "html_url": "https://github.com/RJPalmer/littlelemon",
+    "description": "The Capstone Project for the Coursera Meta iOs Developer Certification",
+    "stargazers_count": 0,
+    "updated_at": "2023-07-18T09:31:17Z",
+    "language": "Swift"
+  },
+  {
+    "name": "LoadingScreenTest",
+    "html_url": "https://github.com/RJPalmer/LoadingScreenTest",
+    "description": "Displays a loading screen that leads into a Main Title screen. Built using Unity 3D",
+    "stargazers_count": 1,
+    "updated_at": "2019-03-11T20:54:46Z",
+    "language": "ASP"
+  },
+  {
+    "name": "LogicTrack",
+    "html_url": "https://github.com/RJPalmer/LogicTrack",
+    "description": "Simplify your supply chain with LogiTrack — a lightweight logistics API.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-29T15:03:50Z",
+    "language": "C#"
+  },
+  {
+    "name": "makeread.me",
+    "html_url": "https://github.com/RJPalmer/makeread.me",
+    "description": "An Awesome ReadME Generator To Jumpstart Your Projects!",
+    "stargazers_count": 0,
+    "updated_at": "2024-11-14T17:58:15Z",
+    "language": null
+  },
+  {
+    "name": "mario_Games",
+    "html_url": "https://github.com/RJPalmer/mario_Games",
+    "description": "Welcome to the Super Mario Adventure - Web Edition repository! This project brings the classic joy of Mario to the web, offering an immersive and nostalgic gaming experience for players of all ages.",
+    "stargazers_count": 0,
+    "updated_at": "2023-10-16T16:53:39Z",
+    "language": null
+  },
+  {
+    "name": "NetBeansCalculatorForm",
+    "html_url": "https://github.com/RJPalmer/NetBeansCalculatorForm",
+    "description": "Creating a calculator program using java swing forms in Netbeans",
+    "stargazers_count": 1,
+    "updated_at": "2014-01-07T00:09:17Z",
+    "language": "Java"
+  },
+  {
+    "name": "openage",
+    "html_url": "https://github.com/RJPalmer/openage",
+    "description": "Free (as in freedom) open source clone of the Age of Empires II engine :rocket:",
+    "stargazers_count": 0,
+    "updated_at": "2023-11-02T18:06:06Z",
+    "language": null
+  },
+  {
+    "name": "opengl4tutorials",
+    "html_url": "https://github.com/RJPalmer/opengl4tutorials",
+    "description": "Following in the style of NeHe, I'm doing some simple tutorials for the opengl4csharp library.",
+    "stargazers_count": 0,
+    "updated_at": "2016-01-31T05:24:01Z",
+    "language": "C#"
+  },
+  {
+    "name": "OpenGLWinForm",
+    "html_url": "https://github.com/RJPalmer/OpenGLWinForm",
+    "description": "A simple project using OpenGL and Windows Forms",
+    "stargazers_count": 1,
+    "updated_at": "2014-05-14T00:22:50Z",
+    "language": "C++"
+  },
+  {
+    "name": "OpenRA",
+    "html_url": "https://github.com/RJPalmer/OpenRA",
+    "description": "Open Source real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert written in C# using SDL and OpenGL. Runs on Windows, Linux, *BSD and Mac OS X.",
+    "stargazers_count": 0,
+    "updated_at": "2022-01-18T06:51:48Z",
+    "language": null
+  },
+  {
+    "name": "PaletteSwipe",
+    "html_url": "https://github.com/RJPalmer/PaletteSwipe",
+    "description": "A grid-based puzzle game in SwiftUI where players swipe to arrange colours",
+    "stargazers_count": 0,
+    "updated_at": "2023-12-04T18:07:17Z",
+    "language": null
+  },
+  {
+    "name": "plugin-sharing",
+    "html_url": "https://github.com/RJPalmer/plugin-sharing",
+    "description": "Sharing button in toolbar for GitBooks",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-06T20:44:55Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "pokeapi",
+    "html_url": "https://github.com/RJPalmer/pokeapi",
+    "description": "The Pokémon API",
+    "stargazers_count": 0,
+    "updated_at": "2026-07-19T05:29:56Z",
+    "language": null
+  },
+  {
+    "name": "Pokemon-fetch-cli-Go",
+    "html_url": "https://github.com/RJPalmer/Pokemon-fetch-cli-Go",
+    "description": "A simple Go command-line tool (pokemon-fetch-cli-go) to fetch Pokémon data from the PokéAPI and store it locally.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-07T04:59:21Z",
+    "language": null
+  },
+  {
+    "name": "price-notifier",
+    "html_url": "https://github.com/RJPalmer/price-notifier",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2022-05-15T05:34:44Z",
+    "language": null
+  },
+  {
+    "name": "project-osus",
+    "html_url": "https://github.com/RJPalmer/project-osus",
+    "description": "HacktoberFest OpenSource URLShortener Application - Participate in Hacktoberfest by contributing to any Open Source project on GitHub! Here is a starter project for first time contributors. #hacktoberfest",
+    "stargazers_count": 0,
+    "updated_at": "2024-10-10T15:37:34Z",
+    "language": null
+  },
+  {
+    "name": "qfn_uidemo",
+    "html_url": "https://github.com/RJPalmer/qfn_uidemo",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2016-06-29T21:32:37Z",
+    "language": "C#"
+  },
+  {
+    "name": "requestly-desktop-app",
+    "html_url": "https://github.com/RJPalmer/requestly-desktop-app",
+    "description": "Requestly Desktop App (Mac, Linux, Windows)",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-11T15:47:44Z",
+    "language": null
+  },
+  {
+    "name": "RJPalmer",
+    "html_url": "https://github.com/RJPalmer/RJPalmer",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2021-12-02T20:21:35Z",
+    "language": null
+  },
+  {
+    "name": "rjpalmer.github.io",
+    "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
+    "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
+    "stargazers_count": 0,
+    "updated_at": "2026-09-03T15:29:54Z",
+    "language": "HTML"
+  },
+  {
+    "name": "scrapy",
+    "html_url": "https://github.com/RJPalmer/scrapy",
+    "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
+    "stargazers_count": 0,
+    "updated_at": "2024-11-06T16:36:13Z",
+    "language": "Python"
+  },
+  {
+    "name": "SecurityAuthentication",
+    "html_url": "https://github.com/RJPalmer/SecurityAuthentication",
+    "description": "SafeVault is a secure ASP.NET Core web application implementing role-based access control, user authentication, and strong protection against SQL injection attacks. It leverages Razor Pages, Entity Framework Core, and ASP.NET Core Identity to provide customizable user and role management.",
+    "stargazers_count": 0,
+    "updated_at": "2025-12-22T17:22:47Z",
+    "language": "C#"
+  },
+  {
+    "name": "SkillSnap",
+    "html_url": "https://github.com/RJPalmer/SkillSnap",
+    "description": "A light weight web application that allows users to create and orgranize projects.",
+    "stargazers_count": 0,
+    "updated_at": "2025-12-22T17:21:08Z",
+    "language": "C#"
+  },
+  {
+    "name": "SmartCityApp",
+    "html_url": "https://github.com/RJPalmer/SmartCityApp",
+    "description": "🏙️ A console-based Java app to explore, search & manage city attractions — with role-based access for Users & Admins. Beginner-friendly & open for contributions!",
+    "stargazers_count": 0,
+    "updated_at": "2026-08-30T18:26:57Z",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Spoon-Knife",
+    "html_url": "https://github.com/RJPalmer/Spoon-Knife",
+    "description": "This repo is for demonstration purposes only. Comments and issues may or may not be responded to.",
+    "stargazers_count": 1,
+    "updated_at": "2013-01-04T03:13:46Z",
+    "language": null
+  },
+  {
+    "name": "Starter-Ruby-Project",
+    "html_url": "https://github.com/RJPalmer/Starter-Ruby-Project",
+    "description": "A starter project using using the Rails framework",
+    "stargazers_count": 1,
+    "updated_at": "2013-10-01T05:49:49Z",
+    "language": null
+  },
+  {
+    "name": "SwiftTetris_RP",
+    "html_url": "https://github.com/RJPalmer/SwiftTetris_RP",
+    "description": "SwiftTetris_RP is a Tetris game clone developed in Swift. This project serves as a demonstration of game development techniques, UI programming, and logic implementation using Swift for iOS/macOS.",
+    "stargazers_count": 0,
+    "updated_at": "2025-08-25T20:14:42Z",
+    "language": "Swift"
+  },
+  {
+    "name": "SwiftUI-Game",
+    "html_url": "https://github.com/RJPalmer/SwiftUI-Game",
+    "description": "A little arcade game that uses SwiftUI as a game engine.",
+    "stargazers_count": 0,
+    "updated_at": "2024-04-17T19:41:11Z",
+    "language": null
+  },
+  {
+    "name": "TestIsometric",
+    "html_url": "https://github.com/RJPalmer/TestIsometric",
+    "description": "Unity project displaying isometric view.",
+    "stargazers_count": 0,
+    "updated_at": "2025-12-22T17:21:54Z",
+    "language": "C#"
+  },
+  {
+    "name": "trelby",
+    "html_url": "https://github.com/RJPalmer/trelby",
+    "description": "The free, multiplatform, feature-rich screenwriting program!",
+    "stargazers_count": 0,
+    "updated_at": "2022-02-22T19:17:48Z",
+    "language": "Python"
+  },
+  {
+    "name": "UnityLearningPrototype3",
+    "html_url": "https://github.com/RJPalmer/UnityLearningPrototype3",
+    "description": "Unit 3 - Sounds and Effects",
+    "stargazers_count": 0,
+    "updated_at": "2022-01-23T19:57:00Z",
+    "language": "ASP.NET"
+  },
+  {
+    "name": "UserManagementAPI",
+    "html_url": "https://github.com/RJPalmer/UserManagementAPI",
+    "description": "A minimal ASP.NET Core Web API for managing users with in-memory storage, model validation, token-based authentication, structured error handling, and request logging.",
+    "stargazers_count": 0,
+    "updated_at": "2026-09-03T15:17:38Z",
+    "language": "C#"
+  },
+  {
+    "name": "vscode-development-driven-testing",
+    "html_url": "https://github.com/RJPalmer/vscode-development-driven-testing",
+    "description": "VS Code extension to generate C#/.NET Xunit test class with test methods",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-12T05:06:59Z",
+    "language": null
+  },
+  {
+    "name": "WailBrew",
+    "html_url": "https://github.com/RJPalmer/WailBrew",
+    "description": "Minimalistic Homebrew GUI made with Go, Wails and React.",
+    "stargazers_count": 0,
+    "updated_at": "2025-10-07T04:19:55Z",
+    "language": null
+  },
+  {
+    "name": "web-music-player",
+    "html_url": "https://github.com/RJPalmer/web-music-player",
+    "description": "A modern, browser-based music player focused on local libraries, built with React and Zustand. It supports queue management, shuffle and repeat modes, keyboard and OS-level media controls, drag-and-drop uploads, and seamless restoration of local files after reload — all with a clean, resilient architecture designed for real-world use.",
+    "stargazers_count": 0,
+    "updated_at": "2026-01-05T01:09:14Z",
+    "language": "TypeScript"
+  },
+  {
+    "name": "WPFApplication",
+    "html_url": "https://github.com/RJPalmer/WPFApplication",
+    "description": "Test App for development on Surface Pro",
+    "stargazers_count": 0,
+    "updated_at": "2016-01-25T03:48:37Z",
+    "language": "C#"
+  },
+  {
+    "name": "yappin",
+    "html_url": "https://github.com/RJPalmer/yappin",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2025-10-07T03:07:21Z",
+    "language": null
+  }
+]

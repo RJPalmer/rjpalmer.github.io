@@ -1,46 +1,64 @@
-      /* container */
-      #clouds {
-        position: fixed;
-        inset: 0 0 auto 0; /* top only */
-        height: 140px;
-        pointer-events: none;
-        z-index: 1000;
-        overflow: hidden;
-      }
-      
-      .cloud {
-        position: absolute;
-        top: 0;
-        left: -50%;
-        width: 200%;
-        height: 140px;
-        background-repeat: repeat-x;
-        background-position: 0 0;
-        will-change: transform;
-        transform: translateX(0);
-        animation: cloud-scroll 60s linear infinite;
-        opacity: 0.9;
-      }
-      
-      .cloud--layer1 {
-        background-image: url('/assets/clouds-layer1.svg');
-        animation-duration: 60s; /* slower, further back */
-        opacity: 0.6;
-      }
-      
-      .cloud--layer2 {
-        background-image: url('/assets/clouds-layer2.svg');
-        animation-duration: 30s; /* faster, in front */
-        opacity: 0.9;
-      }
-      
-      @keyframes cloud-scroll {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-50%); }
-      }
-      
-      /* Respect reduced motion */
-      @media (prefers-reduced-motion: reduce) {
-        .cloud { animation: none; }
-      }
-  
+/* CSS-only clouds (no external assets) */
+
+/* container */
+#clouds {
+  position: fixed;
+  inset: 0 0 auto 0; /* top only */
+  height: 140px;
+  pointer-events: none;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* base cloud layer */
+.cloud {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 140px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  will-change: transform;
+  transform: translateX(0);
+  animation: cloud-scroll 60s linear infinite;
+  opacity: 0.95;
+  /* subtle blur for softer look */
+  filter: blur(2px);
+}
+
+/* back (slower) layer: larger, more diffused puffs */
+.cloud--layer1 {
+  background-size: 700px 140px;
+  animation-duration: 80s; /* slower, further back */
+  opacity: 0.55;
+  background-image:
+    radial-gradient(circle at 10% 55%, rgba(255,255,255,0.98) 0 38px, transparent 40px),
+    radial-gradient(circle at 30% 50%, rgba(255,255,255,0.98) 0 55px, transparent 57px),
+    radial-gradient(circle at 55% 45%, rgba(255,255,255,0.98) 0 48px, transparent 50px),
+    radial-gradient(circle at 80% 52%, rgba(255,255,255,0.98) 0 36px, transparent 38px);
+}
+
+/* front (faster) layer: smaller, denser puffs */
+.cloud--layer2 {
+  background-size: 500px 140px;
+  animation-duration: 45s; /* faster, in front */
+  opacity: 0.9;
+  background-image:
+    radial-gradient(circle at 5% 60%, rgba(255,255,255,0.99) 0 24px, transparent 26px),
+    radial-gradient(circle at 25% 50%, rgba(255,255,255,0.99) 0 38px, transparent 40px),
+    radial-gradient(circle at 50% 52%, rgba(255,255,255,0.99) 0 30px, transparent 32px),
+    radial-gradient(circle at 70% 46%, rgba(255,255,255,0.99) 0 28px, transparent 30px),
+    radial-gradient(circle at 90% 55%, rgba(255,255,255,0.99) 0 20px, transparent 22px);
+}
+
+/* pan left */
+@keyframes cloud-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .cloud { animation: none; transform: none; }
+}

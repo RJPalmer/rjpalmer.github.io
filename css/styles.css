@@ -214,3 +214,28 @@ button.primary:hover, .btn.primary:hover {
   transform: scale(1.05); 
   background: var(--bg-button-secondary);
 }
+/* Dark theme variables: these override the defaults when [data-theme="dark"] is set on the root */
+:root[data-theme="dark"], [data-theme="dark"] {
+  --bg-primary: #0f1724; /* Dark page background */
+  --bg-card: #071226; /* Card/container background */
+  --bg-button-primary: #2563eb; /* Primary button background (blue) */
+  --bg-button-secondary: #0b1220; /* Secondary button bg */
+  --bg-alert-info: #061226;
+  --bg-alert-warning: #2b2730;
+
+  --text-primary: #e6eef8; /* Light text for headings/main */
+  --text-secondary: #b7c7d9; /* Secondary text */
+  --text-button-primary: #ffffff;
+  --text-button-secondary: #e6eef8;
+  --text-link: #7dd3fc;
+  --text-link-hover: #38bdf8;
+  --text-alert-warning: #fb923c;
+
+  --border-default: #1f2937; /* Dark borders */
+  --border-focus: #60a5fa; /* Focus ring color */
+
+  --button-hover-primary: #1e40af;
+  --button-hover-secondary: #0b1220;
+
+  --shadow-card-hover: rgba(2,6,23,0.6);
+}

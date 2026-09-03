@@ -131,23 +131,29 @@
           container.innerHTML = "Unable to load repositories.";
         });
     </script>
-    <script>
-      const toggle = document.getElementById("theme-toggle");
-      const savedTheme = localStorage.getItem("theme");
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-      if (savedTheme) {
-        document.documentElement.setAttribute("data-theme", savedTheme);
-        toggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-      }
+  // Decide initial theme: saved choice wins, otherwise system preference
+  const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
 
-      toggle.addEventListener("click", () => {
-        const current = document.documentElement.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
+  // Apply initial theme and sync the button text
+  document.documentElement.setAttribute("data-theme", initialTheme);
+  toggle.textContent = initialTheme === "dark" ? "☀️" : "🌙";
 
-        document.documentElement.setAttribute("data-theme", next);
-        localStorage.setItem("theme", next);
-        toggle.textContent = next === "dark" ? "☀️" : "🌙";
-      });
+  // Toggle handler (keeps existing behavior)
+  toggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    toggle.textContent = next === "dark" ? "☀️" : "🌙";
+  });
+</script>
     </script>
   </body>
 </html>

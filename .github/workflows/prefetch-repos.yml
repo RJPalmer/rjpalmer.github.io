@@ -33,7 +33,7 @@ jobs:
               const repos = [];
 
             for (let page = 1; ; page++) {
-              const url = new URL(`${process.env.GITHUB_API_URL}/user/repos`);
+              const url = new URL(`${process.env.GITHUB_API_URL}/users/RJPalmer/repos`);
               url.search = new URLSearchParams({
                 visibility: "public",
                 affiliation: "owner",

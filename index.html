@@ -160,5 +160,99 @@
   });
 </script>
     </script>
+    <!-- Add this block near the end of the <body> on your homepage (just before </body>) -->
+<style>
+  /* Minimal styles for the music control — adapt to your site's design */
+  .music-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.02);
+  }
+  .music-toggle:focus { outline: 3px solid Highlight; }
+  .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px); white-space: nowrap; }
+</style>
+
+<!-- Background music control -->
+<button id="musicToggle" class="music-toggle" aria-pressed="false" aria-label="Play background music" type="button">
+  <span id="musicIcon">▶</span>
+  <span id="musicLabel">Play music</span>
+</button>
+
+<!-- Hidden audio element; src intentionally omitted to avoid preloading the MP4 -->
+<audio id="bgAudio" preload="none" loop aria-hidden="true"></audio>
+
+<script>
+(function () {
+  const STORAGE_KEY = 'bgAudioEnabled';
+  const AUDIO_PATH = '/assets/media/Recording-1.mp4'; // exact path to your MP4 file (contains a space)
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('musicToggle');
+  const icon = document.getElementById('musicIcon');
+  const label = document.getElementById('musicLabel');
+  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Restore preference; default to off if user prefers reduced motion and no saved pref
+  let enabled = localStorage.getItem(STORAGE_KEY) === 'true';
+  if (prefersReduced && localStorage.getItem(STORAGE_KEY) === null) enabled = false;
+
+  function updateUI() {
+    btn.setAttribute('aria-pressed', String(enabled));
+    icon.textContent = enabled ? '⏸' : '▶';
+    label.textContent = enabled ? 'Pause music' : 'Play music';
+  }
+
+  async function enableAudio() {
+    // Lazy-load the audio file only when the user explicitly enables it
+    if (!audio.src) {
+      // Note: file name contains a space; most servers handle it, but URL-encoding is safe.
+      // Using a literal path preserves your repository filename. If you later rename file, update AUDIO_PATH.
+      audio.src = AUDIO_PATH;
+    }
+    try {
+      // Because this call is triggered by a user click, playback should be allowed by browsers.
+      await audio.play();
+      enabled = true;
+      localStorage.setItem(STORAGE_KEY, 'true');
+      updateUI();
+    } catch (err) {
+      console.warn('Playback failed:', err);
+      enabled = false;
+      localStorage.setItem(STORAGE_KEY, 'false');
+      updateUI();
+    }
+  }
+
+  function disableAudio() {
+    audio.pause();
+    enabled = false;
+    localStorage.setItem(STORAGE_KEY, 'false');
+    updateUI();
+  }
+
+  btn.addEventListener('click', () => {
+    if (enabled) disableAudio();
+    else enableAudio();
+  });
+
+  // Ensure keyboard activation works reliably (button already supports Enter/Space, but keep this robust)
+  btn.addEventListener('keydown', (e) => {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      btn.click();
+    }
+  });
+
+  // Initial UI state (no autoplay)
+  updateUI();
+})();
+</script>
+<!-- End of background music block -->
+    
   </body>
 </html>

@@ -260,7 +260,7 @@
     "html_url": "https://github.com/RJPalmer/Hacktoberfest2023",
     "description": "Make your first Pull Request on Hacktoberfest 2023. Don't forget to spread love and if you like give us a ⭐️ ",
     "stargazers_count": 1,
-    "updated_at": "2023-10-07T22:22:57Z",
+    "updated_at": "2026-09-11T15:39:19Z",
     "language": "Python"
   },
   {
@@ -500,7 +500,7 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-09-10T08:06:01Z",
+    "updated_at": "2026-09-11T08:01:07Z",
     "language": "HTML"
   },
   {
@@ -516,7 +516,7 @@
     "html_url": "https://github.com/RJPalmer/SecurityAuthentication",
     "description": "SafeVault is a secure ASP.NET Core web application implementing role-based access control, user authentication, and strong protection against SQL injection attacks. It leverages Razor Pages, Entity Framework Core, and ASP.NET Core Identity to provide customizable user and role management.",
     "stargazers_count": 0,
-    "updated_at": "2025-12-22T17:22:47Z",
+    "updated_at": "2026-09-11T15:53:01Z",
     "language": "C#"
   },
   {

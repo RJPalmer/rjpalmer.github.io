@@ -24,6 +24,14 @@
     "language": "JavaScript"
   },
   {
+    "name": "ArcadeMaker",
+    "html_url": "https://github.com/RJPalmer/ArcadeMaker",
+    "description": "A cross-platform 2D game engine with its own programming language and IDE.",
+    "stargazers_count": 0,
+    "updated_at": "2026-09-23T15:21:57Z",
+    "language": null
+  },
+  {
     "name": "AssetsUp",
     "html_url": "https://github.com/RJPalmer/AssetsUp",
     "description": "AssetsUp is a modern inventory and asset management system designed to help businesses track, register, monitor, and manage physical and digital assets across departments, branches, and even countries.",
@@ -508,7 +516,7 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-09-22T08:29:54Z",
+    "updated_at": "2026-09-23T08:32:01Z",
     "language": "HTML"
   },
   {

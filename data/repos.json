@@ -392,6 +392,14 @@
     "language": null
   },
   {
+    "name": "MERN-Project",
+    "html_url": "https://github.com/RJPalmer/MERN-Project",
+    "description": null,
+    "stargazers_count": 0,
+    "updated_at": "2026-10-12T01:37:29Z",
+    "language": null
+  },
+  {
     "name": "NetBeansCalculatorForm",
     "html_url": "https://github.com/RJPalmer/NetBeansCalculatorForm",
     "description": "Creating a calculator program using java swing forms in Netbeans",
@@ -516,7 +524,7 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-10-10T09:46:57Z",
+    "updated_at": "2026-10-11T09:57:22Z",
     "language": "HTML"
   },
   {

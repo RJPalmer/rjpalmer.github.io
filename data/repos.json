@@ -394,9 +394,9 @@
   {
     "name": "MERN-Project",
     "html_url": "https://github.com/RJPalmer/MERN-Project",
-    "description": null,
+    "description": "A JavaScript and Node.js marketplace backend for managing vendors, product catalogs, inventory, carts, checkout, and orders. It uses MongoDB and Redis for data storage and inventory workflows.",
     "stargazers_count": 0,
-    "updated_at": "2026-10-14T21:58:44Z",
+    "updated_at": "2026-10-20T03:58:55Z",
     "language": "JavaScript"
   },
   {
@@ -524,7 +524,7 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-10-18T07:58:50Z",
+    "updated_at": "2026-10-19T08:47:58Z",
     "language": "HTML"
   },
   {

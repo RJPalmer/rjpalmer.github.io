@@ -524,7 +524,7 @@
     "html_url": "https://github.com/RJPalmer/rjpalmer.github.io",
     "description": "A small, static personal portfolio page that dynamically lists the owner's GitHub repositories grouped by programming language — intended to be hosted as a simple static site (e.g., GitHub Pages) and used by the repo owner or visitors to browse projects.",
     "stargazers_count": 0,
-    "updated_at": "2026-11-09T11:25:54Z",
+    "updated_at": "2026-11-10T11:06:07Z",
     "language": "HTML"
   },
   {
@@ -574,6 +574,14 @@
     "stargazers_count": 1,
     "updated_at": "2013-10-01T05:49:49Z",
     "language": null
+  },
+  {
+    "name": "SupportDesk",
+    "html_url": "https://github.com/RJPalmer/SupportDesk",
+    "description": "SupportDesk is a lightweight customer support ticket app built with React, TypeScript, Vite, ASP.NET Core, and SQLite. Create, track, update, and resolve support requests in one simple workspace.",
+    "stargazers_count": 0,
+    "updated_at": "2026-11-10T14:33:27Z",
+    "language": "TypeScript"
   },
   {
     "name": "SwiftTetris_RP",
